@@ -1,0 +1,7 @@
+conda install -c bioconda mafft
+
+mafft --auto ASV_DNA_sequences.fasta > alignment_file.fasta
+
+conda install -c bioconda fasttree
+
+FastTree -nt -gtr < alignment.fasta > output_tree.tree
